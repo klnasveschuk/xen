@@ -1,21 +1,15 @@
 #!/usr/bin/python
-
-# K L Nasveschuk
-# klnasveschuk@gmail.com
-# 2016-05-04
-
-# Starup and shutdown Xenserver VMS remotely. Easier/faster than using
-# Windows management app
-
-# Changelog
-# 2016-05-04
-# Initial
+###########
+# Author: Kent L Nasveschuk
+# Date: 10-2015
+# Version: 1.0
+##########
 
 import sys
 import subprocess
 import paramiko
 # VM Name/function, UUID, guest IP, Xen host IP
-PRIVKEY = '~/.ssh/id_rsa'
+PRIVKEY = '/home/kln/.ssh/id_rsa'
 xen_hosts = { 'xen1':'192.168.1.30','xen2':'192.168.1.31' }
 #xen_hosts = { 'xen2':'192.168.1.31' }
 WAIT = 5
